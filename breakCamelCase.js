@@ -8,8 +8,7 @@
 
 const breakCase = (string) => {
   let regex = /^[a-z]+|[A-Z]+[a-z]+|[A-Z]+[a-z]+$/g;
-  let value = string.match(regex);
-  return value.join(" ");
+  return string.match(regex).join(" ");
 };
 
 let value = breakCase("camelCasingTestOkayThisLooksGreat");

@@ -2,19 +2,17 @@
 
 const iqTest = (numbers) => {
   let nums = numbers.split(" ").map((x) => x % 2);
-//   console.log(nums);
+  console.log(nums);
 
   let sums = nums.reduce((x, y) => x + y, 0);
+  console.log(sums);
 
   let target = sums > 1 ? 0 : 1;
 
-  return nums.indexOf(target)+1;
+  return nums.indexOf(target) + 1;
 };
 
-let num = iqTest("2 4 7 8 10");
+let result = iqTest("2 4 7 8 10");
+console.log(result);
 
-console.log(num)
-iqTest("1 2 1 1");
-
-
-
+// iqTest("1 2 1 1");
